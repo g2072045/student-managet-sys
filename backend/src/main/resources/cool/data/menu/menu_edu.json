@@ -1,0 +1,88 @@
+[
+  {
+    "name": "教务管理",
+    "router": null,
+    "perms": null,
+    "type": 0,
+    "icon": "icon-education",
+    "orderNum": 10,
+    "viewPath": null,
+    "keepAlive": true,
+    "isShow": true,
+    "childMenus": [
+      {
+        "name": "学生管理",
+        "router": "/edu/student",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-user-student",
+        "orderNum": 1,
+        "viewPath": "modules/edu/views/student.vue",
+        "keepAlive": true,
+        "isShow": true,
+        "childMenus": []
+      },
+      {
+        "name": "教师管理",
+        "router": "/edu/teacher",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-user-teacher",
+        "orderNum": 2,
+        "viewPath": "modules/edu/views/teacher.vue",
+        "keepAlive": true,
+        "isShow": true,
+        "childMenus": []
+      },
+      {
+        "name": "班级管理",
+        "router": "/edu/class",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-class",
+        "orderNum": 3,
+        "viewPath": "modules/edu/views/class.vue",
+        "keepAlive": true,
+        "isShow": true,
+        "childMenus": []
+      },
+      {
+        "name": "课程管理",
+        "router": "/edu/course",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-course",
+        "orderNum": 4,
+        "viewPath": "modules/edu/views/course.vue",
+        "keepAlive": true,
+        "isShow": true,
+        "childMenus": []
+      },
+      {
+        "name": "考勤管理",
+        "router": "/edu/attendance",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-attendance",
+        "orderNum": 5,
+        "viewPath": "modules/edu/views/attendance.vue",
+        "keepAlive": true,
+        "isShow": true,
+        "childMenus": []
+      },
+      {
+        "name": "成绩管理",
+        "router": "/edu/score",
+        "perms": null,
+        "type": 1,
+        "icon": "icon-score",
+        "orderNum": 6,
+        "viewPath": "modules/edu/views/score.vue",
+        "keepAlive": true,
+        "isShow": true,
+        "childMenus": []
+      }
+    ]
+  }
+]
+
