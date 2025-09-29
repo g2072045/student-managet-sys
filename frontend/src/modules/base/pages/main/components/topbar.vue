@@ -103,6 +103,7 @@ const toolbar = reactive({
 			module.list.filter(e => e.enable !== false && !!e.toolbar).map(e => e.toolbar),
 			'order'
 		);
+		
 
 		this.list = await Promise.all(
 			arr
@@ -118,6 +119,8 @@ const toolbar = reactive({
 					}
 				})
 		);
+		console.log(this.list);
+		
 	}
 });
 

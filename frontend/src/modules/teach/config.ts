@@ -8,11 +8,6 @@ export default (): ModuleConfig => {
         ],
         views: [
             {
-                path: '/teach/menu-setup',
-                meta: { label: '教务菜单配置' },
-                component: () => import('./views/menu-setup.vue')
-            },
-            {
                 path: '/teach/student',
                 meta: { label: '学生管理' },
                 component: () => import('./views/student.vue')
