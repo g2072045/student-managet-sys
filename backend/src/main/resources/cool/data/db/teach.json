@@ -1,0 +1,481 @@
+{
+  "base_sys_user": [
+    {
+      "id": 2,
+      "departmentId": 11,
+      "name": "张三",
+      "username": "zhangsan",
+      "password": "e10adc3949ba59abbe56e057f20f883e",
+      "passwordV": 1,
+      "nickName": "张老师",
+      "headImg": "",
+      "phone": "13800138001",
+      "email": "zhangsan@school.com",
+      "status": 1,
+      "remark": "数学老师"
+    },
+    {
+      "id": 3,
+      "departmentId": 11,
+      "name": "李四",
+      "username": "lisi",
+      "password": "e10adc3949ba59abbe56e057f20f883e",
+      "passwordV": 1,
+      "nickName": "李老师",
+      "headImg": "",
+      "phone": "13800138002",
+      "email": "lisi@school.com",
+      "status": 1,
+      "remark": "英语老师"
+    },
+    {
+      "id": 4,
+      "departmentId": 11,
+      "name": "王五",
+      "username": "wangwu",
+      "password": "e10adc3949ba59abbe56e057f20f883e",
+      "passwordV": 1,
+      "nickName": "王老师",
+      "headImg": "",
+      "phone": "13800138003",
+      "email": "wangwu@school.com",
+      "status": 1,
+      "remark": "物理老师"
+    },
+    {
+      "id": 5,
+      "departmentId": 11,
+      "name": "赵六",
+      "username": "zhaoliu",
+      "password": "e10adc3949ba59abbe56e057f20f883e",
+      "passwordV": 1,
+      "nickName": "赵老师",
+      "headImg": "",
+      "phone": "13800138004",
+      "email": "zhaoliu@school.com",
+      "status": 1,
+      "remark": "化学老师"
+    },
+    {
+      "id": 6,
+      "departmentId": 11,
+      "name": "钱七",
+      "username": "qianqi",
+      "password": "e10adc3949ba59abbe56e057f20f883e",
+      "passwordV": 1,
+      "nickName": "钱同学",
+      "headImg": "",
+      "phone": "13800138005",
+      "email": "qianqi@student.com",
+      "status": 1,
+      "remark": "计算机专业学生"
+    },
+    {
+      "id": 7,
+      "departmentId": 11,
+      "name": "孙八",
+      "username": "sunba",
+      "password": "e10adc3949ba59abbe56e057f20f883e",
+      "passwordV": 1,
+      "nickName": "孙同学",
+      "headImg": "",
+      "phone": "13800138006",
+      "email": "sunba@student.com",
+      "status": 1,
+      "remark": "电子工程专业学生"
+    },
+    {
+      "id": 8,
+      "departmentId": 11,
+      "name": "周九",
+      "username": "zhoujiu",
+      "password": "e10adc3949ba59abbe56e057f20f883e",
+      "passwordV": 1,
+      "nickName": "周同学",
+      "headImg": "",
+      "phone": "13800138007",
+      "email": "zhoujiu@student.com",
+      "status": 1,
+      "remark": "机械工程专业学生"
+    },
+    {
+      "id": 9,
+      "departmentId": 11,
+      "name": "吴十",
+      "username": "wushi",
+      "password": "e10adc3949ba59abbe56e057f20f883e",
+      "passwordV": 1,
+      "nickName": "吴同学",
+      "headImg": "",
+      "phone": "13800138008",
+      "email": "wushi@student.com",
+      "status": 1,
+      "remark": "土木工程专业学生"
+    }
+  ],
+  "base_sys_user_role": [
+    {
+      "userId": 2,
+      "roleId": 9
+    },
+    {
+      "userId": 3,
+      "roleId": 9
+    },
+    {
+      "userId": 4,
+      "roleId": 9
+    },
+    {
+      "userId": 5,
+      "roleId": 9
+    },
+    {
+      "userId": 6,
+      "roleId": 10
+    },
+    {
+      "userId": 7,
+      "roleId": 10
+    },
+    {
+      "userId": 8,
+      "roleId": 10
+    },
+    {
+      "userId": 9,
+      "roleId": 10
+    }
+  ],
+  "teach_teacher": [
+    {
+      "id": 1,
+      "teacherNo": "T001",
+      "name": "张三",
+      "gender": 0,
+      "age": 35,
+      "phone": "13800138001",
+      "email": "zhangsan@school.com",
+      "title": "副教授",
+      "userId": 2,
+      "username": "zhangsan",
+      "password": "123456",
+      "departmentId": 11,
+      "status": 0
+    },
+    {
+      "id": 2,
+      "teacherNo": "T002",
+      "name": "李四",
+      "gender": 1,
+      "age": 32,
+      "phone": "13800138002",
+      "email": "lisi@school.com",
+      "title": "讲师",
+      "userId": 3,
+      "username": "lisi",
+      "password": "123456",
+      "departmentId": 11,
+      "status": 0
+    },
+    {
+      "id": 3,
+      "teacherNo": "T003",
+      "name": "王五",
+      "gender": 0,
+      "age": 40,
+      "phone": "13800138003",
+      "email": "wangwu@school.com",
+      "title": "教授",
+      "userId": 4,
+      "username": "wangwu",
+      "password": "123456",
+      "departmentId": 11,
+      "status": 0
+    },
+    {
+      "id": 4,
+      "teacherNo": "T004",
+      "name": "赵六",
+      "gender": 1,
+      "age": 28,
+      "phone": "13800138004",
+      "email": "zhaoliu@school.com",
+      "title": "助教",
+      "userId": 5,
+      "username": "zhaoliu",
+      "password": "123456",
+      "departmentId": 11,
+      "status": 0
+    }
+  ],
+  "teach_student": [
+    {
+      "id": 1,
+      "studentNo": "S001",
+      "name": "钱七",
+      "gender": 0,
+      "age": 20,
+      "phone": "13800138005",
+      "email": "qianqi@student.com",
+      "address": "北京市海淀区",
+      "clazzId": 1,
+      "userId": 6,
+      "username": "qianqi",
+      "password": "123456",
+      "status": 0
+    },
+    {
+      "id": 2,
+      "studentNo": "S002",
+      "name": "孙八",
+      "gender": 1,
+      "age": 21,
+      "phone": "13800138006",
+      "email": "sunba@student.com",
+      "address": "上海市浦东新区",
+      "clazzId": 2,
+      "userId": 7,
+      "username": "sunba",
+      "password": "123456",
+      "status": 0
+    },
+    {
+      "id": 3,
+      "studentNo": "S003",
+      "name": "周九",
+      "gender": 0,
+      "age": 22,
+      "phone": "13800138007",
+      "email": "zhoujiu@student.com",
+      "address": "广州市天河区",
+      "clazzId": 3,
+      "userId": 8,
+      "username": "zhoujiu",
+      "password": "123456",
+      "status": 0
+    },
+    {
+      "id": 4,
+      "studentNo": "S004",
+      "name": "吴十",
+      "gender": 1,
+      "age": 20,
+      "phone": "13800138008",
+      "email": "wushi@student.com",
+      "address": "深圳市南山区",
+      "clazzId": 4,
+      "userId": 9,
+      "username": "wushi",
+      "password": "123456",
+      "status": 0
+    }
+  ],
+  "teach_clazz": [
+    {
+      "id": 1,
+      "name": "计算机科学与技术2021级1班",
+      "grade": "2021",
+      "number": 30,
+      "teacherId": 1,
+      "departmentId": 11,
+      "status": 0
+    },
+    {
+      "id": 2,
+      "name": "电子工程2021级1班",
+      "grade": "2021",
+      "number": 28,
+      "teacherId": 2,
+      "departmentId": 11,
+      "status": 0
+    },
+    {
+      "id": 3,
+      "name": "机械工程2021级1班",
+      "grade": "2021",
+      "number": 32,
+      "teacherId": 3,
+      "departmentId": 11,
+      "status": 0
+    },
+    {
+      "id": 4,
+      "name": "土木工程2021级1班",
+      "grade": "2021",
+      "number": 25,
+      "teacherId": 4,
+      "departmentId": 11,
+      "status": 0
+    }
+  ],
+  "teach_course": [
+    {
+      "id": 1,
+      "courseCode": "CS101",
+      "name": "高等数学",
+      "credit": 4.0,
+      "hours": 64,
+      "type": 0,
+      "departmentId": 11,
+      "teacherId": 1,
+      "status": 0
+    },
+    {
+      "id": 2,
+      "courseCode": "CS102",
+      "name": "大学英语",
+      "credit": 3.0,
+      "hours": 48,
+      "type": 0,
+      "departmentId": 11,
+      "teacherId": 2,
+      "status": 0
+    },
+    {
+      "id": 3,
+      "courseCode": "CS103",
+      "name": "大学物理",
+      "credit": 3.5,
+      "hours": 56,
+      "type": 0,
+      "departmentId": 11,
+      "teacherId": 3,
+      "status": 0
+    },
+    {
+      "id": 4,
+      "courseCode": "CS104",
+      "name": "计算机基础",
+      "credit": 2.5,
+      "hours": 40,
+      "type": 0,
+      "departmentId": 11,
+      "teacherId": 1,
+      "status": 0
+    },
+    {
+      "id": 5,
+      "courseCode": "CS105",
+      "name": "电路分析",
+      "credit": 3.0,
+      "hours": 48,
+      "type": 0,
+      "departmentId": 11,
+      "teacherId": 4,
+      "status": 0
+    }
+  ],
+  "teach_attendance": [
+    {
+      "id": 1,
+      "studentId": 1,
+      "courseId": 1,
+      "teacherId": 1,
+      "attendanceDate": "2025-10-01",
+      "status": 0,
+      "remark": "正常出勤"
+    },
+    {
+      "id": 2,
+      "studentId": 2,
+      "courseId": 1,
+      "teacherId": 1,
+      "attendanceDate": "2025-10-01",
+      "status": 0,
+      "remark": "正常出勤"
+    },
+    {
+      "id": 3,
+      "studentId": 3,
+      "courseId": 1,
+      "teacherId": 1,
+      "attendanceDate": "2025-10-01",
+      "status": 1,
+      "remark": "迟到10分钟"
+    },
+    {
+      "id": 4,
+      "studentId": 4,
+      "courseId": 1,
+      "teacherId": 1,
+      "attendanceDate": "2025-10-01",
+      "status": 0,
+      "remark": "正常出勤"
+    },
+    {
+      "id": 5,
+      "studentId": 1,
+      "courseId": 2,
+      "teacherId": 2,
+      "attendanceDate": "2025-10-02",
+      "status": 0,
+      "remark": "正常出勤"
+    },
+    {
+      "id": 6,
+      "studentId": 2,
+      "courseId": 2,
+      "teacherId": 2,
+      "attendanceDate": "2025-10-02",
+      "status": 3,
+      "remark": "旷课"
+    }
+  ],
+  "teach_score": [
+    {
+      "id": 1,
+      "studentId": 1,
+      "courseId": 1,
+      "teacherId": 1,
+      "score": 85.5,
+      "semester": "2025-2026-1",
+      "status": 0
+    },
+    {
+      "id": 2,
+      "studentId": 2,
+      "courseId": 1,
+      "teacherId": 1,
+      "score": 78.0,
+      "semester": "2025-2026-1",
+      "status": 0
+    },
+    {
+      "id": 3,
+      "studentId": 3,
+      "courseId": 1,
+      "teacherId": 1,
+      "score": 92.5,
+      "semester": "2025-2026-1",
+      "status": 0
+    },
+    {
+      "id": 4,
+      "studentId": 4,
+      "courseId": 1,
+      "teacherId": 1,
+      "score": 88.0,
+      "semester": "2025-2026-1",
+      "status": 0
+    },
+    {
+      "id": 5,
+      "studentId": 1,
+      "courseId": 2,
+      "teacherId": 2,
+      "score": 82.0,
+      "semester": "2025-2026-1",
+      "status": 0
+    },
+    {
+      "id": 6,
+      "studentId": 2,
+      "courseId": 2,
+      "teacherId": 2,
+      "score": 90.5,
+      "semester": "2025-2026-1",
+      "status": 0
+    }
+  ]
+}

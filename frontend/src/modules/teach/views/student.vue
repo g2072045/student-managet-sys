@@ -28,7 +28,7 @@
 
 import { useCrud, useTable, useUpsert, useSearch } from "@cool-vue/crud";
 import { useCool } from "/@/cool";
-import { BaseService } from "/@/cool";
+
 	import { useI18n } from "vue-i18n";
 	import { reactive } from "vue";
 import ClazzSelect from "/$/teach/components/class-select.vue";
@@ -59,7 +59,9 @@ import ClazzSelect from "/$/teach/components/class-select.vue";
 			{ label: t('电话'), prop: "phone", component: { name: "el-input", props: { clearable: true } }, span: 12 },
 			{ label: t('邮箱'), prop: "email", component: { name: "el-input", props: { clearable: true } }, span: 12 },
 			{ label: t('地址'), prop: "address", component: { name: "el-input", props: { type: "textarea", rows: 4 } } },
-			{ label: t('选择班级'), prop: "clazzId", component: { vm: ClazzSelect }, span: 12 },
+			{ label: t('选择班级'), prop: "clazzId", component: { vm: ClazzSelect }, span: 12, required: true },
+			{ label: t('用户名'), prop: "username", component: { name: "el-input", props: { clearable: true } }, span: 12, required: true },
+			{ label: t('密码'), prop: "password", component: { name: "el-input", props: { clearable: true, type: "password" } }, span: 12, required: true },
 			{ label: t('状态'), prop: "status", component: { name: "el-radio-group", options: options.status }, value: 0, required: true }
 		]
 	});
@@ -67,7 +69,7 @@ import ClazzSelect from "/$/teach/components/class-select.vue";
 	const Table = useTable({
 		columns: [
 			{ type: "selection" },
-			{ label: t('名称'), prop: "clazzName", minWidth: 140 },
+			{ label: t('班级'), prop: "clazzName", minWidth: 140 },
 			{ label: t('学号'), prop: "studentNo", minWidth: 140 },
 			{ label: t('姓名'), prop: "name", minWidth: 140 },
 			{ label: t('性别'), prop: "gender", minWidth: 120, dict: options.gender },
@@ -84,7 +86,7 @@ import ClazzSelect from "/$/teach/components/class-select.vue";
 
 	const Search = useSearch();
 
-const Crud = useCrud({ service: new BaseService("admin/teach/student") }, app => {
+const Crud = useCrud({ service: service.teach.student }, app => {
 		app.refresh();
 	});
 

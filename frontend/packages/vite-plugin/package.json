@@ -1,7 +1,7 @@
 {
 	"name": "@cool-vue/vite-plugin",
 	"version": "8.2.13",
-	"description": "cool-admin、cool-uni builder",
+	"description": "Student-system-manager-system-frontend-development-template",
 	"types": "./dist/index.d.ts",
 	"main": "/dist/index.js",
 	"scripts": {

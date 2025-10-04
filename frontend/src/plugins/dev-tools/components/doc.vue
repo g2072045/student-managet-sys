@@ -37,16 +37,6 @@ const list = ref([
 	},
 	{
 		label: 'vue',
-		icon: Cool,
-		link: 'https://vue.cool-admin.com/'
-	},
-	{
-		label: 'node',
-		icon: Cool,
-		link: 'https://node.cool-admin.com/'
-	},
-	{
-		label: 'vue',
 		icon: Vue,
 		link: 'https://cn.vuejs.org/'
 	},

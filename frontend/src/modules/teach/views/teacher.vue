@@ -28,7 +28,8 @@
 
 import { useCrud, useTable, useUpsert, useSearch } from "@cool-vue/crud";
 import { useCool } from "/@/cool";
-import { BaseService } from "/@/cool";
+import { ref } from "vue";
+
 	import { useI18n } from "vue-i18n";
 	import { reactive } from "vue";
 
@@ -47,6 +48,19 @@ import { BaseService } from "/@/cool";
 		]
 	});
 
+	// 院系数据
+	const departmentList = ref([]);
+
+	// 获取院系数据
+	function getDepartmentList() {
+		return service.base.sys.department.list().then(res => {
+			departmentList.value = res.map(item => ({
+				label: item.name,
+				value: item.id
+			}));
+		});
+	}
+
 	const Upsert = useUpsert({
 		items: [
 			{ label: t('工号'), prop: "teacherNo", component: { name: "el-input", props: { clearable: true } }, span: 12, required: true },
@@ -56,8 +70,15 @@ import { BaseService } from "/@/cool";
 			{ label: t('电话'), prop: "phone", component: { name: "el-input", props: { clearable: true } }, span: 12 },
 			{ label: t('邮箱'), prop: "email", component: { name: "el-input", props: { clearable: true } }, span: 12 },
 			{ label: t('职称'), prop: "title", component: { name: "el-input", props: { clearable: true } }, span: 12 },
+			{ label: t('所属院系'), prop: "departmentId", component: { name: "el-select", props: { clearable: true }, options: departmentList }, span: 12 },
+			{ label: t('用户名'), prop: "username", component: { name: "el-input", props: { clearable: true } }, span: 12, required: true },
+			{ label: t('密码'), prop: "password", component: { name: "el-input", props: { clearable: true, type: "password" } }, span: 12, required: true },
 			{ label: t('状态'), prop: "status", component: { name: "el-radio-group", options: options.status }, value: 0, required: true }
-		]
+		],
+		onOpen: async () => {
+			// 打开表单时获取院系数据
+			await getDepartmentList();
+		}
 	});
 
 	const Table = useTable({
@@ -70,6 +91,7 @@ import { BaseService } from "/@/cool";
 			{ label: t('电话'), prop: "phone", minWidth: 140 },
 			{ label: t('邮箱'), prop: "email", minWidth: 140 },
 			{ label: t('职称'), prop: "title", minWidth: 140 },
+			{ label: t('所属院系'), prop: "departmentName", minWidth: 140 },
 			{ label: t('状态'), prop: "status", minWidth: 100, component: { name: "cl-switch" }, dict: options.status },
 			{ label: t('创建时间'), prop: "createTime", minWidth: 170, sortable: "desc", component: { name: "cl-date-text" } },
 			{ label: t('更新时间'), prop: "updateTime", minWidth: 170, sortable: "custom", component: { name: "cl-date-text" } },
@@ -79,7 +101,14 @@ import { BaseService } from "/@/cool";
 
 	const Search = useSearch();
 
-const Crud = useCrud({ service: new BaseService("admin/teach/teacher") }, app => {
+const Crud = useCrud({ 
+		service: service.teach.teacher,
+		onRefresh: async (params, { next }) => {
+			// 刷新时获取院系数据
+			await getDepartmentList();
+			return next(params);
+		}
+	}, app => {
 		app.refresh();
 	});
 

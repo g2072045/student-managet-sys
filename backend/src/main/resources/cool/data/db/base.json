@@ -75,6 +75,26 @@
       "relevance": 1,
       "menuIdList": null,
       "departmentIdList": null
+    },
+    {
+      "id": 9,
+      "userId": "1",
+      "name": "教师",
+      "label": "teacher",
+      "remark": "教师角色",
+      "relevance": 1,
+      "menuIdList": null,
+      "departmentIdList": null
+    },
+    {
+      "id": 10,
+      "userId": "1",
+      "name": "学生",
+      "label": "student",
+      "remark": "学生角色",
+      "relevance": 1,
+      "menuIdList": null,
+      "departmentIdList": null
     }
   ],
   "base_sys_user": [
